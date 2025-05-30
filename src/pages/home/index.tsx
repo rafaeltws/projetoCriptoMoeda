@@ -38,7 +38,7 @@ export function Home() {
   }, [offset])
 
   async function getData() {
-    fetch(`https://rest.coincap.io/v3/assets?limit=10&offset=${offset}&apiKey=319daad120fd1b989237414728027d59061ce1b50399d80010505795c389dbfd`)
+    fetch(`https://rest.coincap.io/v3/assets?limit=10&offset=${offset}&apiKey=SUA_CHAVE_AQUI`)
     .then(response => response.json())
     .then((data: DataProp) => {
       const coinsData = data.data
